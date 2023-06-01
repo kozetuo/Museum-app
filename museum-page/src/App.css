@@ -1,0 +1,160 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #ff0000;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #222222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+.artwork {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #111;
+  transition: border-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.artwork h3 {
+  margin-top: 0;
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.artwork:hover,
+.artwork:focus {
+  border-color: #ff0000;
+}
+
+.artwork:hover h3,
+.artwork:focus h3 {
+  color: #ff0000;
+}
+
+.artwork img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30px; /* Limit maximum width */
+  max-height: 30px; /* Limit maximum height */
+}
+
+.artwork:hover img,
+.artwork:focus img {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+/* New Form Styling */
+
+.form-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #111;
+}
+
+.form-container label {
+  color: #fff;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea {
+  background-color: #222;
+  color: #fff;
+}
+
+.form-container input[type="file"] {
+  display: none;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #181818;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color:  #ff0000;
+}
+
+.file-name {
+  margin-top: 10px;
+  color: #fff;
+}
